@@ -1,0 +1,347 @@
+{
+    "1":
+    {
+        "Qashqadaryo": 
+        {
+        "Qarshi": "https://namozvaqti.uz/shahar/qarshi", 
+        "Dehqonobod": "https://namozvaqti.uz/shahar/dehqonobod", 
+        "Muborak": "https://namozvaqti.uz/shahar/muborak", 
+        "Shahrisabz": "https://namozvaqti.uz/shahar/shahrisabz",
+         "G'uzor": "https://namozvaqti.uz/shahar/guzor"
+        },
+        "Samarqand" : 
+        {
+            "Samarqand": "https://namozvaqti.uz/shahar/samarqand",
+            "Ishtixon" : "https://namozvaqti.uz/shahar/ishtixon",
+            "Mirbozor": "https://namozvaqti.uz/shahar/mirbozor",
+            "Kattaqo'rg'on": "https://namozvaqti.uz/shahar/kattaqorgon",
+            "Urgut": "https://namozvaqti.uz/shahar/urgut"
+        },
+        "Toshkent": 
+        {
+            "Toshkent": "https://namozvaqti.uz/shahar/toshkent",
+            "Angren": "https://namozvaqti.uz/shahar/angren",
+            "Piskent": "https://namozvaqti.uz/shahar/piskent",
+            "Bekobod": "https://namozvaqti.uz/shahar/bekobod",
+            "Parkent": "https://namozvaqti.uz/shahar/parkent",
+            "G'azalkent": "https://namozvaqti.uz/shahar/gazalkent",
+            "Olmaliq": "https://namozvaqti.uz/shahar/olmaliq",
+            "Bo'ka": "https://namozvaqti.uz/shahar/boka",
+            "Yangiyo'l": "https://namozvaqti.uz/shahar/yangiyol",
+            "Nurafshon": "https://namozvaqti.uz/shahar/nurafshon"
+        },
+        "Buxoro":
+        {
+            "Buxoro": "https://namozvaqti.uz/shahar/buxoro",
+            "Gazli": "https://namozvaqti.uz/shahar/gazli",
+            "G'ijduvon": "https://namozvaqti.uz/shahar/gijduvon",
+            "Qorako'l": "https://namozvaqti.uz/shahar/qorakol",
+            "Jondor": "https://namozvaqti.uz/shahar/jondor"
+        },
+        "Jizzax": 
+        {
+            "Jizzax": "https://namozvaqti.uz/shahar/jizzax",
+            "Zomin": "https://namozvaqti.uz/shahar/zomin",
+            "Forish": "https://namozvaqti.uz/shahar/forish",
+            "G'allaorol": "https://namozvaqti.uz/shahar/gallaorol",
+            "Do'stlik": "https://namozvaqti.uz/shahar/dostlik"
+        },
+        "Farg'ona":
+        {
+            "Farg'ona": "https://namozvaqti.uz/shahar/fargona",
+            "Marg'ilon": "https://namozvaqti.uz/shahar/margilon",
+            "Qo'qon": "https://namozvaqti.uz/shahar/qoqon",
+            "Quva": "https://namozvaqti.uz/shahar/quva",
+            "Rishton": "https://namozvaqti.uz/shahar/rishton",
+            "Bog'dod": "https://namozvaqti.uz/shahar/bogdod",
+            "Oltiariq": "https://namozvaqti.uz/shahar/oltiariq"
+        },
+        "Namangan" : 
+        {
+            "Namangan": "https://namozvaqti.uz/shahar/namangan",
+            "Chortoq": "https://namozvaqti.uz/shahar/chortoq",
+            "Chust": "https://namozvaqti.uz/shahar/chust",
+            "Pop": "https://namozvaqti.uz/shahar/pop",
+            "Uchqurg'on": "https://namozvaqti.uz/shahar/uchqurgon",
+            "Mingbuloq": "https://namozvaqti.uz/shahar/mingbuloq"
+        },
+        "Andijon":
+        {
+            "Andijon": "https://namozvaqti.uz/shahar/andijon",
+            "Xonobod": "https://namozvaqti.uz/shahar/xonobod",
+            "Shahrixon": "https://namozvaqti.uz/shahar/shahrixon",
+            "Xo'jaobod": "https://namozvaqti.uz/shahar/xojaobod",
+            "Asaka": "https://namozvaqti.uz/shahar/asaka",
+            "Marhamat": "https://namozvaqti.uz/shahar/marhamat",
+            "Poytug'": "https://namozvaqti.uz/shahar/poytug",
+            "Bo'ston": "https://namozvaqti.uz/shahar/boston"    
+        },
+        "Xorazm":
+        {
+            "Urgach": "https://namozvaqti.uz/shahar/urganch",
+            "Hazorasp": "https://namozvaqti.uz/shahar/hazorasp",
+            "Xonqa": "https://namozvaqti.uz/shahar/xonqa",
+            "Yangibozor": "https://namozvaqti.uz/shahar/yangibozor",
+            "Shovot": "https://namozvaqti.uz/shahar/shovot",
+            "Xiva": "https://namozvaqti.uz/shahar/xiva"
+        },
+        "Surxondaryo":
+        {
+            "Termiz": "https://namozvaqti.uz/shahar/termiz",
+            "Boysun": "https://namozvaqti.uz/shahar/boysun",
+            "Denov": "https://namozvaqti.uz/shahar/denov",
+            "Sherobod": "https://namozvaqti.uz/shahar/sherobod",
+            "Sho'rchi": "https://namozvaqti.uz/shahar/shorchi"
+        },
+        "Qoraqalpog'iston Respublikasi": 
+        {
+            "Nukus": "https://namozvaqti.uz/shahar/nukus",
+            "Mo'ynoq": "https://namozvaqti.uz/shahar/moynoq",
+            "Taxtako'pir": "https://namozvaqti.uz/shahar/taxtakopir",
+            "To'rtko'l": "https://namozvaqti.uz/shahar/tortkol",
+            "Qo'ng'irot": "https://namozvaqti.uz/shahar/qongirot"
+        },
+        "Navoiy":
+        {
+            "Navoiy" : "https://namozvaqti.uz/shahar/navoiy",
+            "Zarafshon": "https://namozvaqti.uz/shahar/zarafshon",
+            "Konemix": "https://namozvaqti.uz/shahar/konemix",
+            "Nurota": "https://namozvaqti.uz/shahar/nurota",
+            "Uchquduq": "https://namozvaqti.uz/shahar/uchquduq"
+        },
+        "Sirdaryo":
+        {
+            "Guliston": "https://namozvaqti.uz/shahar/guliston",
+            "Sardoba": "https://namozvaqti.uz/shahar/sardoba",
+            "Sirdaryo" : "https://namozvaqti.uz/shahar/sirdaryo",
+            "Boyovut": "https://namozvaqti.uz/shahar/boyovut",
+            "Paxtaobod": "https://namozvaqti.uz/shahar/paxtaobod"
+        }
+    },
+    "2":
+    {
+            "Қашқадарё": 
+                {
+                "Қарши": "https://namozvaqti.uz/shahar/qarshi", 
+                "Деҳқонобод": "https://namozvaqti.uz/shahar/dehqonobod", 
+                "Муборак": "https://namozvaqti.uz/shahar/muborak", 
+                "Шаҳрисабз": "https://namozvaqti.uz/shahar/shahrisabz",
+                 "Ғузор": "https://namozvaqti.uz/shahar/guzor"
+                },
+            "Самарқанд" : 
+                {
+                    "Самарқанд": "https://namozvaqti.uz/shahar/samarqand",
+                    "Иштихон" : "https://namozvaqti.uz/shahar/ishtixon",
+                    "Мирбозор": "https://namozvaqti.uz/shahar/mirbozor",
+                    "Каттақўрғон": "https://namozvaqti.uz/shahar/kattaqorgon",
+                    "Ургут": "https://namozvaqti.uz/shahar/urgut"
+                },
+            "Тошкент": 
+                {
+                    "Тошкент": "https://namozvaqti.uz/shahar/toshkent",
+                    "Ангрен": "https://namozvaqti.uz/shahar/angren",
+                    "Пискент": "https://namozvaqti.uz/shahar/piskent",
+                    "Бекобод": "https://namozvaqti.uz/shahar/bekobod",
+                    "Паркент": "https://namozvaqti.uz/shahar/parkent",
+                    "Ғазалкент": "https://namozvaqti.uz/shahar/gazalkent",
+                    "Олмалиқ": "https://namozvaqti.uz/shahar/olmaliq",
+                    "Боқа": "https://namozvaqti.uz/shahar/boka",
+                    "Янгийўл": "https://namozvaqti.uz/shahar/yangiyol",
+                    "Нурафшон": "https://namozvaqti.uz/shahar/nurafshon"
+                },
+            "Бухоро":
+                {
+                    "Бухоро": "https://namozvaqti.uz/shahar/buxoro",
+                    "Газли": "https://namozvaqti.uz/shahar/gazli",
+                    "Ғиждувон": "https://namozvaqti.uz/shahar/gijduvon",
+                    "Қоракўл": "https://namozvaqti.uz/shahar/qorakol",
+                    "Жондор": "https://namozvaqti.uz/shahar/jondor"
+                },
+            "Жиззах": 
+                {
+                    "Жиззах": "https://namozvaqti.uz/shahar/jizzax",
+                    "Зомин": "https://namozvaqti.uz/shahar/zomin",
+                    "Фориш": "https://namozvaqti.uz/shahar/forish",
+                    "Ғаллаорол": "https://namozvaqti.uz/shahar/gallaorol",
+                    "Дўстлик": "https://namozvaqti.uz/shahar/dostlik"
+                },
+            "Фарғона":
+                {
+                    "Фарғона": "https://namozvaqti.uz/shahar/fargona",
+                    "Марғилон": "https://namozvaqti.uz/shahar/margilon",
+                    "Қўқон": "https://namozvaqti.uz/shahar/qoqon",
+                    "Қува": "https://namozvaqti.uz/shahar/quva",
+                    "Риштон": "https://namozvaqti.uz/shahar/rishton",
+                    "Боғдод": "https://namozvaqti.uz/shahar/bogdod",
+                    "Олтиариқ": "https://namozvaqti.uz/shahar/oltiariq"
+                },
+            "Наманган" : 
+                {
+                    "Наманган": "https://namozvaqti.uz/shahar/namangan",
+                    "Чортоқ": "https://namozvaqti.uz/shahar/chortoq",
+                    "Чуст": "https://namozvaqti.uz/shahar/chust",
+                    "Поп": "https://namozvaqti.uz/shahar/pop",
+                    "Учқўрғон": "https://namozvaqti.uz/shahar/uchqurgon",
+                    "Мингбулоқ": "https://namozvaqti.uz/shahar/mingbuloq"
+                },
+            "Андижон":
+                {
+                    "Андижон": "https://namozvaqti.uz/shahar/andijon",
+                    "Хонобод": "https://namozvaqti.uz/shahar/xonobod",
+                    "Шаҳрихон": "https://namozvaqti.uz/shahar/shahrixon",
+                    "Хўжаобод": "https://namozvaqti.uz/shahar/xojaobod",
+                    "Асака": "https://namozvaqti.uz/shahar/asaka",
+                    "Марҳамат": "https://namozvaqti.uz/shahar/marhamat",
+                    "Пойтуғ": "https://namozvaqti.uz/shahar/poytug",
+                    "Бўстон": "https://namozvaqti.uz/shahar/boston"    
+                },
+            "Хоразм":
+                {
+                    "Урганч": "https://namozvaqti.uz/shahar/urganch",
+                    "Ҳазорасп": "https://namozvaqti.uz/shahar/hazorasp",
+                    "Хонқа": "https://namozvaqti.uz/shahar/xonqa",
+                    "Янгибозор": "https://namozvaqti.uz/shahar/yangibozor",
+                    "Шовот": "https://namozvaqti.uz/shahar/shovot",
+                    "Хива": "https://namozvaqti.uz/shahar/xiva"
+                },
+            "Сурхондарё":
+                {
+                    "Термиз": "https://namozvaqti.uz/shahar/termiz",
+                    "Бойсун": "https://namozvaqti.uz/shahar/boysun",
+                    "Денов": "https://namozvaqti.uz/shahar/denov",
+                    "Шеробод": "https://namozvaqti.uz/shahar/sherobod",
+                    "Шўрчи": "https://namozvaqti.uz/shahar/shorchi"
+                },
+            "Қорақалпоғистон Республикаси": 
+                {
+                    "Нукус": "https://namozvaqti.uz/shahar/nukus",
+                    "Мўйноқ": "https://namozvaqti.uz/shahar/moynoq",
+                    "Тахтакўпир": "https://namozvaqti.uz/shahar/taxtakopir",
+                    "Тўрткўл": "https://namozvaqti.uz/shahar/tortkol",
+                    "Қўнғирот": "https://namozvaqti.uz/shahar/qongirot"
+                },
+            "Навоий":
+                {
+                    "Навоий" : "https://namozvaqti.uz/shahar/navoiy",
+                    "Зарафшон": "https://namozvaqti.uz/shahar/zarafshon",
+                    "Конемих": "https://namozvaqti.uz/shahar/konemix",
+                    "Нурота": "https://namozvaqti.uz/shahar/nurota",
+                    "Учқудуқ": "https://namozvaqti.uz/shahar/uchquduq"
+                },
+            "Сирдарё":
+                {
+                    "Гулистон": "https://namozvaqti.uz/shahar/guliston",
+                    "Сардоба": "https://namozvaqti.uz/shahar/sardoba",
+                    "Сирдарё" : "https://namozvaqti.uz/shahar/sirdaryo",
+                    "Бойовут": "https://namozvaqti.uz/shahar/boyovut",
+                    "Пахтаобод": "https://namozvaqti.uz/shahar/paxtaobod"
+                }     
+    },
+    "3": 
+    {
+        "قاشقاداريو": {
+            "قرشي": "https://namozvaqti.uz/shahar/qarshi",
+            "ديهقاناباد": "https://namozvaqti.uz/shahar/dehqonobod",
+            "مبارك": "https://namozvaqti.uz/shahar/muborak",
+            "شهرسبز": "https://namozvaqti.uz/shahar/shahrisabz",
+            "غوزار": "https://namozvaqti.uz/shahar/guzor"
+        },
+        "سمرقند": {
+            "سمرقند": "https://namozvaqti.uz/shahar/samarqand",
+            "إيشتخون": "https://namozvaqti.uz/shahar/ishtixon",
+            "ميربازور": "https://namozvaqti.uz/shahar/mirbozor",
+            "كتا قرغان": "https://namozvaqti.uz/shahar/kattaqorgon",
+            "أورغوت": "https://namozvaqti.uz/shahar/urgut"
+        },
+        "طشقند": {
+            "طشقند": "https://namozvaqti.uz/shahar/toshkent",
+            "أنجرين": "https://namozvaqti.uz/shahar/angren",
+            "بيسكينت": "https://namozvaqti.uz/shahar/piskent",
+            "بيك آباد": "https://namozvaqti.uz/shahar/bekobod",
+            "باركنت": "https://namozvaqti.uz/shahar/parkent",
+            "غازالكنت": "https://namozvaqti.uz/shahar/gazalkent",
+            "علماليق": "https://namozvaqti.uz/shahar/olmaliq",
+            "بوكا": "https://namozvaqti.uz/shahar/boka",
+            "ينغيويل": "https://namozvaqti.uz/shahar/yangiyol",
+            "نورافشون": "https://namozvaqti.uz/shahar/nurafshon"
+        },
+        "بخارى": {
+            "بخارى": "https://namozvaqti.uz/shahar/buxoro",
+            "غازلي": "https://namozvaqti.uz/shahar/gazli",
+            "غجدوان": "https://namozvaqti.uz/shahar/gijduvon",
+            "قرقل": "https://namozvaqti.uz/shahar/qorakol",
+            "جندار": "https://namozvaqti.uz/shahar/jondor"
+        },
+        "جيزاك": {
+            "جيزاك": "https://namozvaqti.uz/shahar/jizzax",
+            "زومين": "https://namozvaqti.uz/shahar/zomin",
+            "فوريش": "https://namozvaqti.uz/shahar/forish",
+            "غلولار": "https://namozvaqti.uz/shahar/gallaorol",
+            "دوستليك": "https://namozvaqti.uz/shahar/dostlik"
+        },
+        "فرغانة": {
+            "فرغانة": "https://namozvaqti.uz/shahar/fargona",
+            "مرغيلان": "https://namozvaqti.uz/shahar/margilon",
+            "قوقند": "https://namozvaqti.uz/shahar/qoqon",
+            "قووه": "https://namozvaqti.uz/shahar/quva",
+            "ريشتان": "https://namozvaqti.uz/shahar/rishton",
+            "بغداد": "https://namozvaqti.uz/shahar/bogdod",
+            "ألتي أريك": "https://namozvaqti.uz/shahar/oltiariq"
+        },
+        "نمنكان": {
+            "نمنكان": "https://namozvaqti.uz/shahar/namangan",
+            "چارتاق": "https://namozvaqti.uz/shahar/chortoq",
+            "چوست": "https://namozvaqti.uz/shahar/chust",
+            "بوب": "https://namozvaqti.uz/shahar/pop",
+            "أوتش قورغان": "https://namozvaqti.uz/shahar/uchqurgon",
+            "منغ بولوك": "https://namozvaqti.uz/shahar/mingbuloq"
+        },
+        "أنديجان": {
+            "أنديجان": "https://namozvaqti.uz/shahar/andijon",
+            "خنوبود": "https://namozvaqti.uz/shahar/xonobod",
+            "شهرخان": "https://namozvaqti.uz/shahar/shahrixon",
+            "خوجا آباد": "https://namozvaqti.uz/shahar/xojaobod",
+            "أسكا": "https://namozvaqti.uz/shahar/asaka",
+            "مرحمة": "https://namozvaqti.uz/shahar/marhamat",
+            "بويتوج": "https://namozvaqti.uz/shahar/poytug",
+            "بوستون": "https://namozvaqti.uz/shahar/boston"
+        },
+        "خوارزم": {
+            "أورغنج": "https://namozvaqti.uz/shahar/urganch",
+            "هازوراسب": "https://namozvaqti.uz/shahar/hazorasp",
+            "خنقا": "https://namozvaqti.uz/shahar/xonqa",
+            "ينغي بوزور": "https://namozvaqti.uz/shahar/yangibozor",
+            "شوفوت": "https://namozvaqti.uz/shahar/shovot",
+            "خيوا": "https://namozvaqti.uz/shahar/xiva"
+        },
+        "سورخنداريا": {
+            "ترميز": "https://namozvaqti.uz/shahar/termiz",
+            "بايسون": "https://namozvaqti.uz/shahar/boysun",
+            "ديناو": "https://namozvaqti.uz/shahar/denov",
+            "شيرابود": "https://namozvaqti.uz/shahar/sherobod",
+            "شورجي": "https://namozvaqti.uz/shahar/shorchi"
+        },
+        "جمهورية قرقل باغستان": {
+            "نوكوس": "https://namozvaqti.uz/shahar/nukus",
+            "موي ناك": "https://namozvaqti.uz/shahar/moynoq",
+            "تختكوبير": "https://namozvaqti.uz/shahar/taxtakopir",
+            "تورت كول": "https://namozvaqti.uz/shahar/tortkol",
+            "كونغيرات": "https://namozvaqti.uz/shahar/qongirot"
+        },
+        "ناواي": {
+            "ناواي": "https://namozvaqti.uz/shahar/navoiy",
+            "زرافشان": "https://namozvaqti.uz/shahar/zarafshon",
+            "كونيمخ": "https://namozvaqti.uz/shahar/konemix",
+            "نورتا": "https://namozvaqti.uz/shahar/nurota",
+            "أوتش قودوق": "https://namozvaqti.uz/shahar/uchquduq"
+        },
+        "سرداريا": {
+            "غولستان": "https://namozvaqti.uz/shahar/guliston",
+            "سردوبا": "https://namozvaqti.uz/shahar/sardoba",
+            "سرداريا": "https://namozvaqti.uz/shahar/sirdaryo",
+            "بويووت": "https://namozvaqti.uz/shahar/boyovut",
+            "باخت آباد": "https://namozvaqti.uz/shahar/paxtaobod"
+        }
+    }
+    
+}
