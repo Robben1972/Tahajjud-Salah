@@ -8,3 +8,4 @@ TOKEN = env("BOT_TOKEN")
 
 user_data = load_data("Json/user_info.json")
 city_data = load_data("Json/city_info.json")
+trs = load_data("Json/translation.json")
