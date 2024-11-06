@@ -1,4 +1,4 @@
-from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
+from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton 
 from variables import city_data
 def generate_region_buttons():
     region_button = [[]]
@@ -12,3 +12,13 @@ def generate_region_buttons():
                 count = 0
     keyboard = ReplyKeyboardMarkup(keyboard=region_button, resize_keyboard=True, one_time_keyboard=True)
     return keyboard    
+
+def language_selector():
+     return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text='O\'zbek', callback_data='uz'),
+                InlineKeyboardButton(text='العربية', callback_data='ar'),
+                InlineKeyboardButton(text='Узбек', callback_data='уз')
+            ],
+        ]) 

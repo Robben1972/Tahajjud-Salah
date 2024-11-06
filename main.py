@@ -11,7 +11,7 @@ from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from variables import user_data, TOKEN
-from reply_markups import generate_region_buttons
+from reply_markups import generate_region_buttons, language_selector
 
 dp = Dispatcher()
 
@@ -27,7 +27,7 @@ class GettingInfo(StatesGroup):
 @dp.message(CommandStart())
 async def command_start_handler(message: Message, state: FSMContext) -> None:
     if str(message.from_user.id) not in user_data:
-        await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!", reply_markup=generate_region_buttons())
+        await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!", reply_markup=language_selector())
         await state.update_data(user_id=message.from_user.id)
         await state.update_data(fullname=message.from_user.full_name)
         await state.set_state(GettingInfo.region)
