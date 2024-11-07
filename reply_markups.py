@@ -10,6 +10,7 @@ def generate_region_buttons(language: str):
             else:
                 region_button.append([KeyboardButton(text=i)])
                 count = 0
+    region_button.append([KeyboardButton(text=trs['back'][language])])
     keyboard = ReplyKeyboardMarkup(keyboard=region_button, resize_keyboard=True, one_time_keyboard=True)
     return keyboard    
 

@@ -13,6 +13,7 @@ def update_user_info():
 
 def fetch_and_save_data():
     data = {}
+    update_user_info()
     for i in user_info:
         response = requests.get(f"https://namozvaqti.uz/shahar/{user_info[i]['city'].lower()}")
         soup = BeautifulSoup(response.content, 'html.parser')

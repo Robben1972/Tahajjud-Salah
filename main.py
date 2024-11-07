@@ -11,6 +11,7 @@ from aiogram.types import ReplyKeyboardRemove
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from variables import TOKEN, trs, city_data
+from daily_send import periodic_check
 from json_actions import save_data, load_data
 from reply_markups import generate_region_buttons, language_selector, generate_city_buttons
 
@@ -56,10 +57,14 @@ async def language_callback(callback_query: types.CallbackQuery, state: FSMConte
 
 @dp.message(F.content_type == ContentType.TEXT, GettingInfo.region)
 async def city(message: Message, state: FSMContext) -> None:
-    await state.update_data(region=message.text)
-    await state.set_state(GettingInfo.city)
     data = await state.get_data()
-    await message.answer(f"{trs['city'][data['language']]}", reply_markup=generate_city_buttons(data['language'], data['region']))
+    if message.text == trs['back'][data['language']]:
+        await message.answer(f"{trs['greeting']['uz']}\n {trs['greeting']['уз']} \n {trs['greeting']['ar']}", reply_markup=language_selector())
+    else:
+        await state.update_data(region=message.text)
+        await state.set_state(GettingInfo.city)
+        data = await state.get_data()
+        await message.answer(f"{trs['city'][data['language']]}", reply_markup=generate_city_buttons(data['language'], data['region']))
 
 @dp.message(F.content_type == ContentType.TEXT, GettingInfo.city)
 async def save_datas(message: Message, state: FSMContext) -> None:
@@ -85,11 +90,11 @@ async def save_datas(message: Message, state: FSMContext) -> None:
 
 
 
-
 async def main() -> None:
     bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    # Start periodic time-checking and notifications in a background task
+    asyncio.create_task(periodic_check())
     await dp.start_polling(bot)
-
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
