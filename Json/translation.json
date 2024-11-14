@@ -1,38 +1,38 @@
 {
     "greeting": 
     {
-        "uz": "Assalomu alaykum. Iltimos o'zingizga qulay tilni tanlang",
-        "уз": "Ассалому алайкум. Илтимос ўзингизга қулай тилни танланг",
-        "ar": "مرحبًا. الرجاء اختيار لغتك المفضلة"
+        "uz": "Assalomu alaykum 👋🏻. Iltimos o'zingizga qulay tilni tanlang 🌍",
+        "уз": "Ассалому алайкум 👋🏻. Илтимос ўзингизга қулай тилни танланг 🌍",
+        "ar": "مرحبا 👋🏻. يرجى اختيار لغتك المفضلة 🌍"
     },
     "region": 
     {
-        "uz": "Iltimos viloyatingizni tanlang: ",
-        "уз": "Илтимос вилоятингизни танланг: ",
-        "ar": "الرجاء تحديد منطقتك: "
+        "uz": "Iltimos viloyatingizni tanlang 🌆: ",
+        "уз": "Илтимос вилоятингизни танланг 🌆: ",
+        "ar": "يرجى تحديد منطقتك 🌆: "
     },
     "city": 
     {
-        "uz": "Iltimos shaharingizni tanlang: ",
-        "уз": "Илтимос шаҳарингизни танланг: ",
-        "ar": "يرجى اختيار مدينتك: "
+        "uz": "Iltimos shaharingizni tanlang 📍: ",
+        "уз": "Илтимос шаҳарингизни танланг 📍: ",
+        "ar": "الرجاء تحديد مدينتك 📍: "
     },
     "thanks": 
     {
-        "uz": "Ma'lumotlaringizni kiritganingizdan xursandmiz. Tahajjudni davomiy o'qishingizni duo qilib qolamiz",
-        "уз": "Маълумотларингизни киритганингиздан хурсандмиз. Таҳажжудни давомий ўқишингизни дуо қилиб қоламиз",
-        "ar": "نحن نقدر مدخلاتك. نتمنى لكم مواصلة قراءة التهجد"
+        "uz": "Ma'lumotlaringizni kiritganingizdan xursandmiz ☺️. Tahajjudni davomiy o'qishingizni duo qilib qolamiz 🤲",
+        "уз": "Маълумотларингизни киритганингиздан хурсандмиз ☺️. Таҳажжудни давомий ўқишингизни дуо қилиб қоламиз 🤲",
+        "ar": "يسعدنا إدخال معلوماتك ☺️. نتمنى لكم مواصلة قراءة التهجد 🤲"
     },
     "come_back": 
     {
-        "uz" : "Sizni ko'rganimizdan xursandmiz. Quyidagi amallardan birini tanlashingiz mumkin: ",
-        "уз" : "Сизни кўрганимиздан хурсандмиз. Қуйидаги амаллардан бирини танлашингиз мумкин: ",
-        "ar": "نحن سعداء لرؤيتك. يمكنك اختيار أحد الإجراءات التالية: "
+        "uz" : "Sizni ko'rganimizdan xursandmiz ☺️. Quyidagi amallardan birini tanlashingiz mumkin: ",
+        "уз" : "Сизни кўрганимиздан хурсандмиз ☺️. Қуйидаги амаллардан бирини танлашингиз мумкин: ",
+        "ar": "نحن سعداء برؤيتكم ☺️. يمكنك اختيار أحد الإجراءات التالية: "
     },
     "back":
     {
-        "uz": "Orqaga",
-        "уз": "Орқага",
-        "ar": "خلف"
+        "uz": "Orqaga ⬅️",
+        "уз": "Орқага ⬅️",
+        "ar": "العودة ⬅️"
     }
 }

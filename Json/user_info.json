@@ -3,12 +3,16 @@
         "fullname": "\u0428\u0430\u0445\u043e\u0431\u0438\u0434\u0434\u0438\u043d",
         "language": "uz",
         "region": "Qashqadaryo",
-        "city": "Qarshi"
+        "city": "Qarshi",
+        "all_prays": 3,
+        "prays_in_row": 2
     },
     "7447356308": {
         "fullname": "Shahob",
         "language": "uz",
-        "region": "Toshkent",
-        "city": "Toshkent"
+        "region": "Qashqadaryo",
+        "city": "Qarshi",
+        "all_prays": 0,
+        "prays_in_row": 0
     }
 }

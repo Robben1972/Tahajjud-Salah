@@ -2,7 +2,7 @@ import asyncio
 import logging
 import sys
 
-from aiogram import Bot, Dispatcher, html, types, F
+from aiogram import Bot, Dispatcher, types, F
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.client.default import DefaultBotProperties
 from aiogram.fsm.context import FSMContext
@@ -10,12 +10,15 @@ from aiogram.enums import ParseMode, ContentType
 from aiogram.types import ReplyKeyboardRemove
 from aiogram.filters import CommandStart
 from aiogram.types import Message
-from variables import TOKEN, trs, city_data
+from variables import TOKEN, trs
 from daily_send import periodic_check
 from scrapping_data import periodic_check_24
 from json_actions import save_data, load_data
 from reply_markups import generate_region_buttons, language_selector, generate_city_buttons
 from gemeni import generate_answer
+from scrapping_data import fetch_and_save_data
+
+
 
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
@@ -53,11 +56,13 @@ async def command_start_handler(message: Message, state: FSMContext) -> None:
 async def process_sleep_response(callback_query: types.CallbackQuery):
     response = callback_query.data.split("_")[1]
     if response == "yes":
-        text = await generate_answer('Generate good words for the person who prayed tahajjud today. Keep it simple and small, return just one sentence. You can also give small hadith or Quran ayahs')
-        await bot.send_message(callback_query.from_user.id, text=text)
+        await bot.send_message(callback_query.from_user.id, text='hello')
+        user_data[str(callback_query.from_user.id)]['all_prays'] += 1
+        user_data[str(callback_query.from_user.id)]['prays_in_row'] += 1
     else:
-        text = await generate_answer("Generate a good words for the person who tries to pray tahajjud but today overslept and couldn't pray it. Return simple and small motivation one sentence for him")
-        await bot.send_message(callback_query.from_user.id, text=text)
+        await bot.send_message(callback_query.from_user.id, text='hello')
+        user_data[str(callback_query.from_user.id)]['prays_in_row'] = 0
+    save_data("Json/user_info.json", user_data)
     await bot.delete_message(callback_query.from_user.id, callback_query.message.message_id)
 
 @dp.callback_query()
@@ -95,12 +100,15 @@ async def save_datas(message: Message, state: FSMContext) -> None:
                 'fullname': data['fullname'],
                 'language': data['language'],
                 'region': data['region'],
-                'city': data['city']
+                'city': data['city'],
+                'all_prays': 0,
+                'prays_in_row': 0
             }
         }
         save_data('Json/user_info.json', user_data)
         await state.clear()
         update()
+        await fetch_and_save_data()
         await message.answer(f"{trs['thanks'][data['language']]}", reply_markup=ReplyKeyboardRemove())
 
 
