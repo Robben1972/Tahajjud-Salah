@@ -7,5 +7,8 @@ def load_data(file):
         return json.load(f)
 
 def save_data(file, data) -> None:
+    with open(file, 'r') as f:
+        current_data = json.load(f)
+    current_data.update(data)
     with open(file, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=4)
+        json.dump(current_data, f, indent=4)

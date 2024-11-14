@@ -16,8 +16,8 @@ async def update_user_info():
 
 async def send_notification(user_id):
     buttons=[
-                InlineKeyboardButton(text='Yes', callback_data='yes'),
-                InlineKeyboardButton(text='No', callback_data='no')
+                InlineKeyboardButton(text='Yes', callback_data='pray_yes'),
+                InlineKeyboardButton(text='No', callback_data='pray_no')
             ],
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
     await bot.send_message(

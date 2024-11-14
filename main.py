@@ -12,8 +12,10 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 from variables import TOKEN, trs, city_data
 from daily_send import periodic_check
+from scrapping_data import periodic_check_24
 from json_actions import save_data, load_data
 from reply_markups import generate_region_buttons, language_selector, generate_city_buttons
+from gemeni import generate_answer
 
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
@@ -47,7 +49,17 @@ async def command_start_handler(message: Message, state: FSMContext) -> None:
         await message.answer(f"{trs['come_back'][user_data[str(message.from_user.id)]['language']]}", reply_markup=ReplyKeyboardRemove())
 
 
-# 
+@dp.callback_query(lambda c: c.data and c.data.startswith("pray_"))
+async def process_sleep_response(callback_query: types.CallbackQuery):
+    response = callback_query.data.split("_")[1]
+    if response == "yes":
+        text = await generate_answer('Generate good words for the person who prayed tahajjud today. Keep it simple and small, return just one sentence. You can also give small hadith or Quran ayahs')
+        await bot.send_message(callback_query.from_user.id, text=text)
+    else:
+        text = await generate_answer("Generate a good words for the person who tries to pray tahajjud but today overslept and couldn't pray it. Return simple and small motivation one sentence for him")
+        await bot.send_message(callback_query.from_user.id, text=text)
+    await bot.delete_message(callback_query.from_user.id, callback_query.message.message_id)
+
 @dp.callback_query()
 async def language_callback(callback_query: types.CallbackQuery, state: FSMContext) -> None:
     await state.update_data(language=callback_query.data)
@@ -55,7 +67,6 @@ async def language_callback(callback_query: types.CallbackQuery, state: FSMConte
     data = await state.get_data()
     await callback_query.message.answer(f"{trs['region'][data['language']]}", reply_markup=generate_region_buttons(data['language']))
     await state.set_state(GettingInfo.region)
-
 
 
 
@@ -95,8 +106,8 @@ async def save_datas(message: Message, state: FSMContext) -> None:
 
 
 async def main() -> None:
-    # Start periodic time-checking and notifications in a background task
     asyncio.create_task(periodic_check())
+    # asyncio.create_task(periodic_check_24())
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
