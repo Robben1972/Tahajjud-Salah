@@ -3,7 +3,7 @@ import time
 from json_actions import load_data
 from aiogram import Bot
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from variables import TOKEN
+from variables import TOKEN, trs
 
 bot = Bot(token=TOKEN)
 
@@ -15,6 +15,7 @@ async def update_user_info():
             await send_notification(user_id)
 
 async def send_notification(user_id):
+    user_data = load_data('Json/user_info.json')
     buttons=[
                 InlineKeyboardButton(text='Yes', callback_data='pray_yes'),
                 InlineKeyboardButton(text='No', callback_data='pray_no')
@@ -22,7 +23,7 @@ async def send_notification(user_id):
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
     await bot.send_message(
         user_id,
-        "Hello, do you still sleep?",
+        trs["prayed"][user_data[str(user_id)]['language']],
         reply_markup=keyboard
     )
 

@@ -34,5 +34,21 @@
         "uz": "Orqaga ⬅️",
         "уз": "Орқага ⬅️",
         "ar": "العودة ⬅️"
+    },
+    "prayed": 
+    {
+        "uz": "Assalomu alaykum bugun Tahajjud namozini o'qidingizmi?",
+        "уз": "Ассалому алайкум бугун Таҳажжуд намозини ўқидингизми?",
+        "ar": "مرحبا، هل صليت التهجد اليوم؟"
+    },
+    "settings": {
+        "uz": ["Ma'lumotlarni o'zgartirish ✍🏻", "Sun'iy Intellekt bilan suxbatlashish 🤖"],
+        "уз": ["Маълумотларни ўзгартириш ✍🏻", "Сунъий Интеллект билан сухбатлашиш 🤖"],
+        "ar": ["تغيير البيانات ✍🏻", "الدردشة مع الذكاء الاصطناعي 🤖"]
+    },
+    "ai": {
+        "uz": "O'zingizni qiziqtirgan diniy savollarni bering 📿. Unutmang Sun'iy intellekt adashishi mumkin 💥. Yurtingizdagi Diniy arboblar bilan maslahatlashing 👨🏼‍🏫",
+        "ar": "اطرح أسئلة دينية تهمك 📿. تذكر أن الذكاء الاصطناعي يمكن أن يكون خاطئًا 💥. استشر الزعماء الدينيين في بلدك 👨🏼‍🏫",
+        "уз": "Ўзингизни қизиқтирган диний саволларни беринг 📿. Унутманг Сунъий интеллект адашиши мумкин 💥. Юртингиздаги Диний арбоблар билан маслаҳатлашинг 👨🏼‍🏫"
     }
 }

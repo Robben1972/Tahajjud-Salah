@@ -37,3 +37,9 @@ def generate_city_buttons(language: str, region: str):
     city_button.append([KeyboardButton(text=trs['back'][language])])
     keyboard = ReplyKeyboardMarkup(keyboard=city_button, resize_keyboard=True, one_time_keyboard=True)
     return keyboard    
+
+def settings_buttons(language: str):
+    buttons = [
+                [KeyboardButton(text=trs['settings'][language][0]), KeyboardButton(text=trs['settings'][language][1])]]
+    keyboard = ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True, one_time_keyboard=True)
+    return keyboard

@@ -9,3 +9,4 @@ GEMENI_KEY = env('GEMENI_API_KEY')
 
 city_data = load_data("Json/city_info.json")
 trs = load_data("Json/translation.json")
+prays = load_data("Json/prayed_or_not.json")

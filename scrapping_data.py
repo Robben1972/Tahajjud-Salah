@@ -21,7 +21,7 @@ async def fetch_and_save_data():
     data = {}
     update_user_info()
     for i in user_info:
-        response = requests.get(f"https://namozvaqti.uz/shahar/{user_info[i]['city'].lower()}")
+        response = requests.get(city_data[user_info[i]['language']][user_info[i]['region']][user_info[i]['city']])
         soup = BeautifulSoup(response.content, 'html.parser')
         link = str(soup.find_all('script')[-1])
         data[i] = link[link.find('const times')+25 : link.find('const times')+30]

@@ -1,0 +1,39 @@
+{
+    "uz": {
+        "yes" : ["Sizning duo va ibodatlaringiz Allohga yoqimli. Tahajjudga davom eting.",
+"Alloh sizni har kuni tong saharida kutmoqda. Ushbu fazilatni qadrlang.",
+"Dunyoni unuting va faqat Alloh bilan yolg‘iz qoling! Tahajjud – Allohga yaqinlik vaqti.",
+"Sahar vaqtida o‘zingizni Allohga topshirganingiz uchun Alloh sizni sevadi.",
+"Tahajjud – qalbingizga nur va farovonlik olib keladi."],
+        "no": ["Tahajjudga intiling, har bir urinishingiz Allohning huzurida qadrli.",
+"Bugun o‘tolmagan bo‘lsangiz ham, harakatda davom eting. Alloh urinishni sevadi.",
+"Alloh yo‘lida harakat qilgan kishi gunohlaridan kechiriladi.",
+"Bugun Tahajjudni o‘qiy olmadingizmi? Inshaalloh, ertaga yana bir imkoniyat.",
+"Alloh sizni har bir niyat va harakat uchun mukofotlaydi. Davom eting!"]
+    },
+    "уз": {
+        "yes" : ["Сизнинг дуо ва ибодатларингиз Аллоҳга ёқимли. Таҳажжудга давом этинг.",
+"Аллоҳ сизни ҳар куни тонг саҳарида кутмоқда. Ушбу фазилатни қадрланг.",
+"Дунёни унутинг ва фақат Аллоҳ билан ёлғиз қолинг! Таҳажжуд – Аллоҳга яқинлик вақти.",
+"Саҳар вақтида ўзингизни Аллоҳга топширганингиз учун Аллоҳ сизни севади.",
+"Таҳажжуд – қалбингизга нур ва фаровонлик олиб келади."],
+        "no": ["Таҳажжудга интилинг, ҳар бир уринишингиз Аллоҳнинг ҳузурида қадрли.",
+"Бугун ўтолмаган бўлсангиз ҳам, ҳаракатда давом этинг. Аллоҳ уринишни севади.",
+"Аллоҳ йўлида ҳаракат қилган киши гуноҳларидан кечирилади.",
+"Бугун Таҳажжудни ўқий олмадингизми? Иншааллоҳ, эртага яна бир имконият.",
+"Аллоҳ сизни ҳар бир ният ва ҳаракат учун мукофотлайди. Давом этинг!"]
+    },
+    "ar": {
+        "yes" : ["تذكر، الله قريب منك في صلاة التهجد.",
+         "لا تنسَ أن الله يحبُ مَن يقوم في جوف الليل.", 
+         "قيام الليل طريق إلى نور القلب ورضا الله.",
+          "الله ينتظرك عند السحر، فتواصل في الدعاء والذكر.",
+           "التهجد سكينةٌ للقلب ورضا للنفس."],
+        "no": ["تحلى بالصبر، فالله يعلم نيتك.",
+        "إن فاتتك الليلة، فجاهد نفسك لليلة القادمة بإذن الله.",
+        "من اجتهد في سبيل الله غفر له.",
+        "التوبة والنية تكفي، فالله يحب المجاهدين في سبيله.",
+        "استمر في المحاولة، والله كريمٌ مع عبادِه الساعين."
+    ]
+    }
+}
