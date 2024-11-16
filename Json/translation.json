@@ -50,5 +50,10 @@
         "uz": "O'zingizni qiziqtirgan diniy savollarni bering 📿. Unutmang Sun'iy intellekt adashishi mumkin 💥. Yurtingizdagi Diniy arboblar bilan maslahatlashing 👨🏼‍🏫",
         "ar": "اطرح أسئلة دينية تهمك 📿. تذكر أن الذكاء الاصطناعي يمكن أن يكون خاطئًا 💥. استشر الزعماء الدينيين في بلدك 👨🏼‍🏫",
         "уз": "Ўзингизни қизиқтирган диний саволларни беринг 📿. Унутманг Сунъий интеллект адашиши мумкин 💥. Юртингиздаги Диний арбоблар билан маслаҳатлашинг 👨🏼‍🏫"
-    }
+    },
+    "tops":{
+        "uz": "Eng ko'p o'qiganlar",
+        "уз": "Енг кўп ўқиганлар",
+        "ar": "الأكثر قراءة"
+    } 
 }

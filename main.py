@@ -19,9 +19,7 @@ from reply_markups import generate_region_buttons, language_selector, generate_c
 from gemeni import generate_answer
 from scrapping_data import fetch_and_save_data
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
-
-
-
+from sorting_tops import sort_data
 
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
@@ -66,6 +64,11 @@ async def chatting(message: Message, state: FSMContext):
     f'{a}', 
     reply_markup=ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=trs['back'][user_data[str(message.from_user.id)]['language']])]], resize_keyboard=True, one_time_keyboard=True)
 )
+
+@dp.message(lambda message: any(word in message.text for word in [trs['tops']['uz'], trs['tops']['ar'], trs['tops']['уз']]))
+async def tops(message: Message):
+    await message.answer(sort_data(), reply_markup=settings_buttons(user_data[str(message.from_user.id)]['language']))
+
 
 @dp.message(lambda message: any(word in message.text for word in [trs['settings']['uz'][1], trs['settings']['ar'][1], trs['settings']['уз'][1]]))
 async def chat_ai(message: Message, state: FSMContext):
