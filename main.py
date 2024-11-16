@@ -8,7 +8,6 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.client.default import DefaultBotProperties
 from aiogram.fsm.context import FSMContext
 from aiogram.enums import ParseMode, ContentType
-from aiogram.types import ReplyKeyboardRemove
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from variables import TOKEN, trs, prays
@@ -16,10 +15,14 @@ from daily_send import periodic_check
 from scrapping_data import periodic_check_24
 from json_actions import save_data, load_data, save_data_user
 from reply_markups import generate_region_buttons, language_selector, generate_city_buttons, settings_buttons
-from gemeni import generate_answer
 from scrapping_data import fetch_and_save_data
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from sorting_tops import sort_data
+from variables import GEMENI_KEY
+import google.generativeai as genai
+
+genai.configure(api_key=GEMENI_KEY)
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
@@ -53,15 +56,15 @@ async def change_lang(message: Message, state: FSMContext):
 
 @dp.message(lambda message: message.text in [trs['back']['uz'], trs['back']['уз'], trs['back']['ar']], Chat_AI.chatting)
 async def back_to_greeting(message: Message, state: FSMContext) -> None:
-    await state.clear()  # Clear the Chat_AI state
+    await state.clear()
     await message.answer(f"{trs['come_back'][user_data[str(message.from_user.id)]['language']]}", reply_markup=settings_buttons(user_data[str(message.from_user.id)]['language']))
     await state.set_state(GettingInfo.language)
 
 @dp.message(F.content_type == ContentType.TEXT, Chat_AI.chatting)
 async def chatting(message: Message, state: FSMContext):
-    a = await generate_answer(message.text)
+    response = model.generate_content(f"Answer if only questions related to Islam, otherwise say I can't help you with that (in the given question's language). Answer in given question's language. Question: {message.text}")
     await message.answer(
-    f'{a}', 
+    f'{response.text}', 
     reply_markup=ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=trs['back'][user_data[str(message.from_user.id)]['language']])]], resize_keyboard=True, one_time_keyboard=True)
 )
 
@@ -72,7 +75,7 @@ async def tops(message: Message):
 
 @dp.message(lambda message: any(word in message.text for word in [trs['settings']['uz'][1], trs['settings']['ar'][1], trs['settings']['уз'][1]]))
 async def chat_ai(message: Message, state: FSMContext):
-    await message.answer(trs['ai'][user_data[str(message.from_user.id)]['language']])
+    await message.answer(trs['ai'][user_data[str(message.from_user.id)]['language']], reply_markup=ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=trs['back'][user_data[str(message.from_user.id)]['language']])]], resize_keyboard=True, one_time_keyboard=True))
     await state.update_data(user_id=message.from_user.id)
     await state.set_state(Chat_AI.chatting)
 
@@ -151,7 +154,7 @@ async def save_datas(message: Message, state: FSMContext) -> None:
 
 async def main() -> None:
     asyncio.create_task(periodic_check())
-    # asyncio.create_task(periodic_check_24())
+    asyncio.create_task(periodic_check_24())
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
